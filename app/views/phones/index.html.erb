@@ -17,7 +17,7 @@
           <li style="justify-content:space-between;" class="list-group-item"><strong>Talktime</strong><%= phone.talktime %> hrs</li>
           <li style="justify-content:space-between;" class="list-group-item"><strong>Price</strong>€<%= phone.price %></li>
         </ul>
-        <div class="card-body">
+        <div class="card-body card-btns">
           <%= link_to 'Show', phone, :class => "btn btn-info card-link", :style => "color: white;" %>
           <%= link_to 'Edit', edit_phone_path(phone), 
             :class => "btn btn-primary card-link", :style => "color: white;" %>

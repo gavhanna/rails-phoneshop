@@ -14,10 +14,13 @@
  *= require_self
  */
 
-
+* {
+    font-family: 'Raleway';
+}
 body {
     margin: 0;
     padding: 0;
+    color: #454545;
 }
 
 a {
@@ -25,13 +28,61 @@ a {
     
 }
 
-a:hover {
-    background: skyblue;
-    color: white;
-}
+/*a:hover {*/
+/*    background: skyblue;*/
+/*    color: white;*/
+/*}*/
 
 footer {
     margin-top: 50px;
     background: #454545;
     color: white;
+}
+
+.display-4 {
+    font-family: 'Oleo Script';
+}
+
+.btn {
+    border-radius: 0;
+    border: 0;
+}
+
+.btn-info {
+    background: lightskyblue;
+}
+
+.btn-primary {
+    background: skyblue;
+}
+
+.btn-danger {
+    background: salmon;
+}
+
+.jumbotron {
+    background: salmon;
+}
+
+.card {
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.card-btns {
+    border: 0;
+}
+
+.navbar {
+    background: salmon;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar-brand:hover, 
+.nav-link:hover {
+    background: #444;
+    color: salmon !important;
 }
