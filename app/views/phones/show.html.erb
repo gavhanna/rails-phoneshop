@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<div class="col d-flex justify-content-around">
+      
+      <div class="card text-center" style="width: 18rem;">
+        <img style="width: 50%;height:auto;" class="card-img-top mx-auto" src="<%= @phone.imgURL %>" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><%= @phone.name %></h5>
+          <p class="card-text"><%= @phone.description %></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li style="justify-content:space-between;" class="list-group-item"><strong>OS</strong><span><%= @phone.os %></span></li>
+          <li style="justify-content:space-between;" class="list-group-item"><strong>Camera</strong><%= @phone.camera %> MP</li>
+          <li style="justify-content:space-between;" class="list-group-item"><strong>Screen</strong><%= @phone.screensize %>"</li>
+          <li style="justify-content:space-between;" class="list-group-item"><strong>Talktime</strong><%= @phone.talktime %> hrs</li>
+          <li style="justify-content:space-between;" class="list-group-item"><strong>Price</strong>€<%= @phone.price %></li>
+        </ul>
+      </div>
+    </div>
+
+
+<div class="container-fluid text-center">
+  
+  <%= link_to 'Back', phones_path, :class => "btn btn-warning", 
+    :style => "color: white;" %>
+  <%= link_to 'Edit', edit_phone_path(@phone), 
+    :class => "btn btn-primary", :style => "color: white;" %>
+  <%= link_to 'Delete', @phone, method: :delete, data: { confirm: 'Are you sure?' }, 
+    :class => "btn btn-danger card-link", :style => "color: white;"%>
+</div>
+
+
+
+
+

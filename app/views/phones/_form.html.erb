@@ -1,0 +1,66 @@
+<%= form_with(model: phone, local: true) do |form| %>
+  <% if phone.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(phone.errors.count, "error") %> prohibited this phone from being saved:</h2>
+
+      <ul>
+      <% phone.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 ml-auto mr-auto">
+        
+        <form>
+          <div class="form-group">
+            <%= form.label :name %>
+            <%= form.text_field :name, id: :phone_name, :class => 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= form.label :price %>
+            <%= form.text_field :price, id: :phone_price, :class => 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= form.label :description %>
+            <%= form.text_area :description, id: :phone_description, :class => 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= form.label :screensize %>
+            <%= form.text_field :screensize, id: :phone_screensize, :class => 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= form.label :talktime %>
+            <%= form.text_field :talktime, id: :phone_talktime, :class => 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= form.label :camera %>
+            <%= form.text_field :camera, id: :phone_camera, :class => 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= form.label :os %>
+            <%= form.text_field :os, id: :phone_os, :class => 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= form.label :imgURL %>
+            <%= form.text_field :imgURL, id: :phone_imgURL, :class => 'form-control' %>
+          </div>
+          <div class="text-center">
+            <%= form.submit :class => "btn btn-primary" %>
+            <%= link_to 'Back', phones_path, :class => "btn btn-warning", :style => "color:white;"%>
+          </div>
+        </form>
+      </div>
+    </div>
+      
+  </div>
+  
+  
+  
+  
+  
+<% end %>
