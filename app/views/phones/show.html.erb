@@ -1,23 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<div class="col d-flex justify-content-around">
-      
-      <div class="card text-center" style="width: 18rem;">
-        <img style="width: 50%;height:auto;" class="card-img-top mx-auto" src="<%= @phone.imgURL %>" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title"><%= @phone.name %></h5>
-          <p class="card-text"><%= @phone.description %></p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li style="justify-content:space-between;" class="list-group-item"><strong>OS</strong><span><%= @phone.os %></span></li>
-          <li style="justify-content:space-between;" class="list-group-item"><strong>Camera</strong><%= @phone.camera %> MP</li>
-          <li style="justify-content:space-between;" class="list-group-item"><strong>Screen</strong><%= @phone.screensize %>"</li>
-          <li style="justify-content:space-between;" class="list-group-item"><strong>Talktime</strong><%= @phone.talktime %> hrs</li>
-          <li style="justify-content:space-between;" class="list-group-item"><strong>Price</strong>€<%= @phone.price %></li>
-        </ul>
-      </div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm text-center">
+      <h5><%= @phone.name %></h5>
     </div>
-
+  </div>
+  <div class="row">
+    <div class="col-sm-4 mx-auto">
+      <img style="width: 50%;height:auto;" class="img-fluid mx-auto d-block" src="<%= @phone.imgURL %>" alt="Card image cap">
+    </div>
+    <div class="col-sm-6 mx-auto">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><h5 class="text-center"><%= @phone.description %></h5></li>
+        <li style="justify-content:space-between;" class="list-group-item"><strong>OS</strong><span><%= @phone.os %></span></li>
+        <li style="justify-content:space-between;" class="list-group-item"><strong>Camera</strong><%= @phone.camera %> MP</li>
+        <li style="justify-content:space-between;" class="list-group-item"><strong>Screen</strong><%= @phone.screensize %>"</li>
+        <li style="justify-content:space-between;" class="list-group-item"><strong>Talktime</strong><%= @phone.talktime %> hrs</li>
+        <li style="justify-content:space-between;" class="list-group-item"><strong>Price</strong>€<%= @phone.price %></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 <div class="container-fluid text-center">
   

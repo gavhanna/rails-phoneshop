@@ -29,3 +29,9 @@ a:hover {
     background: skyblue;
     color: white;
 }
+
+footer {
+    margin-top: 50px;
+    background: #454545;
+    color: white;
+}
