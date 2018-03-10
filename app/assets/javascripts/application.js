@@ -1,15 +1,34 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
-//
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, or any plugin's
-// vendor/assets/javascripts directory can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// compiled file. JavaScript code in this file should be added after the last require_* statement.
-//
-// Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
-// about supported directives.
-//
-//= require rails-ujs
-//= require turbolinks
-//= require_tree .
+// window.onload = function(){
+    
+//   const nameIn = document.getElementById("phone_name");
+//   const submitBtn = document.getElementById("submit_button");
+  
+//   nameIn.addEventListener("keyup", checkContent);
+  
+//   const inputs = document.querySelectorAll(".form-control");
+  
+//   inputs.forEach(i => {
+//     i.addEventListener("keyup", checkContent);
+//   })
+  
+//   // if (nameIn.value.length === 0) {
+//   //   submitBtn.setAttribute("disabled", "")
+//   // }
+  
+//   console.log(inputs)
+  
+//   function checkContent(e) {
+//     submitBtn.setAttribute("disabled", "");
+//     let nonEmptyFields = 0;
+//     inputs.forEach(i => {
+//       if (i.value.length > 0) {
+//         nonEmptyFields++;
+//       }
+//     });
+//     if (nonEmptyFields === 5) {
+//       submitBtn.removeAttribute("disabled");
+//     } else {
+//       submitBtn.setAttribute("disabled", "");
+//     }
+//   }
+// };
